@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MOkA - Invierte Fácil</title>
+</head>
+<body>
+    <header>
+        <a class="logo"  href="../index.html">MOkA</a>
+    </header>
+    <main>
+        <section class="main-container">
+            <section class="form-container">
+                <form id="form">
+                    <label>Tu Inversión</label>
+                    <p>Durante <span id="years-ren">1 año</span></p>
+                    <input type="range" name="years" id="years" min="1" max="70" value="1">
+                    <label for="initial">Si empezaras con</label>
+                    <div>
+                        <span>$</span>
+                        <input type="number" name="initial" id="initial"  min="1" pattern="^[0-9]+" placeholder="1000">
+                    </div>
+                    <label for="monthly">Y al mes depositaras</label>
+                    <div>
+                        <span>$</span>
+                        <input type="number" name="monthly" id="monthly"  min="1" pattern="^[0-9]+" placeholder="200">
+                    </div>
+                    
+                    <label for="profile">Riesgo</label>
+                    <select name="profile" id="profile">
+                        <option value="0">Conservador</option>
+                        <option value="1">Moderado</option>
+                        <option value="2">Arriesgado</option>
+                    </select>
+                    <p id="alert"></p>
+                    <button class="btn-cal" type="submit"><span class="btn-text">Simular</span></button>
+                </form>
+            </section>
+            <section class="simulation-container hiden-container">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p id="agf">Administradora General de Fondos - Regulada por la CMEFE</p>
+        <p id="copyright">Copyright &copy; 2022 by <span id="moka">MOkA</span></p>
+    </footer>
+    <script type="module" src="../app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
