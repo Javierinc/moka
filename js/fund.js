@@ -56,11 +56,11 @@ export class fund {
                         <p id="result-total" class="info-res">$${params(this.totalDeposit)}</p>
                     </div>
                     <div>
-                        <p class="header-results">Escenario optimista</p>
+                        <p class="header-results">Siendo optimista 😁</p>
                         <p id="result-optimistic" class="info-res">$${params(this.returns[1].at(-1))}</p>
                     </div>
                     <div>
-                        <p class="header-results">Escenario pesimista</p>
+                        <p class="header-results">Siendo pesimista 🙁</p>
                         <p id="result-pessimistic" class="info-res">$${params(this.returns[2].at(-2))}</p>
                     </div>
                 </div>

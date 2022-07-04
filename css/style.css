@@ -9,7 +9,8 @@ body {
     background-color: #1D1E26;
 }
 main{ 
-    margin-bottom: 11rem;     
+    margin: 5rem 0 5rem 0;
+
 }
 
 .moka-container {
@@ -137,7 +138,7 @@ h1 {
 header {
     position: sticky;
     background-color: #1D1E26;
-    
+    z-index: 1;
     top: 0;
     display: flex;
     justify-content: center;
@@ -154,7 +155,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 footer{
-    margin: 4rem auto 1rem;
+    margin: 24rem auto 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,6 +309,9 @@ select:focus {
     }
     .image-container {
         display: none;
+    }
+    footer {
+        margin: 4rem auto 1rem;
     }
 }
 
